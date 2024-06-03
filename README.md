@@ -125,7 +125,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-#### Project Link: [https://github.com/ErdajtSopjani/CleanGoogle](https://github.com/ErdajtSopjani/CleanGoogle)
+#### Project Link: [https://cleansearch.dev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
