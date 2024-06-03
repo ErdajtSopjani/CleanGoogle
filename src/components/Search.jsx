@@ -33,7 +33,7 @@ const Search = () => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="border border-gray-500 bg-transparent md:h-12 pl-10 p-0.5 md:p-2 rounded-full w-full"
+                    className="border border-gray-500 bg-transparent md:h-12 pl-10 py-0.5 md:py-2 rounded-full w-full"
                     placeholder=""
                 />
                 <FontAwesomeIcon icon={faSearch} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
