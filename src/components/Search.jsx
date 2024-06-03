@@ -11,19 +11,19 @@ const Search = () => {
     };
 
     return (
-        <form className="absolute top-60 flex flex-col items-center w-screen" onSubmit={(e) => {
+        <form className="absolute top-24 md:top-44 flex flex-col items-center w-screen" onSubmit={(e) => {
             e.preventDefault();
             handleSearch();
         }}>
-            <h1 className="text-7xl md:text-7xl font-bold text-white pb-10">CleanGoogle</h1>
-            <p className="pt-2 text-gray-300">Google Search, but with no AI junk :0</p>
+            <h1 className="flex flex-row md:flex-row text-5xl md:text-7xl font-bold text-white pb-10"><h1>Clean</h1>Google</h1>
+            <p className="text-xs md:text-sm pt-2 text-gray-300">Google Search, but with no AI junk :0</p>
 
-            <div className="relative h-12 w-screen md:w-2/3 lg:w-1/2 xl:w-1/3">
+            <div className="relative md:h-12 w-10/12 md:w-2/3 lg:w-1/2">
                 <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="border border-gray-500 bg-transparent h-12 pl-10 p-2 rounded-full w-full"
+                    className="border border-gray-500 bg-transparent md:h-12 pl-10 p-2 rounded-full w-full"
                     placeholder=""
                 />
                 <FontAwesomeIcon icon={faSearch} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
