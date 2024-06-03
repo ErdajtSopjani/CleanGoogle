@@ -80,7 +80,7 @@ This is probably my simplest project yet, but despite that It's still useful :sm
 
 <p>Go to <a href="https://cleansearch.dev">https://cleansearch.dev</a> and use it as you would normaly use google</p>
 
-<p>ALl the website does is apply a specific tag to the google search URL so you don't get AI Overview. This will stay consistent through your other searches too even if not made directly on CleanGoogle/CleanSearch</p>
+<p>All the website does is apply a specific tag to the google search URL so you don't get AI Overview. This will stay consistent through your other searches too even if not made directly on CleanGoogle/CleanSearch</p>
 <br>
 
 
