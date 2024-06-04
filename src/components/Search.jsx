@@ -17,18 +17,20 @@ const Search = ({ imageSearch, openNewWindow }) => {
             e.preventDefault();
             handleSearch();
         }}>
-            <h1 className="items-center flex flex-row md:flex-row text-5xl md:text-7xl font-bold text-violet-400 pb-10">
-                Clean
-                <h1>
-                    <span className="text-blue-500">G</span>
-                    <span className="text-red-500">o</span>
-                    <span className="text-yellow-500">o</span>
-                    <span className="text-blue-500">g</span>
-                    <span className="text-green-500">l</span>
-                    <span className="text-red-500">e</span>
+            <div className="items-center flex flex-col md:flex-row pb-10">
+                <h1 className="flex flex-row text-5xl md:text-7xl font-bold text-violet-400">
+                    Clean
+                    <h1>
+                        <span className="text-blue-500">G</span>
+                        <span className="text-red-500">o</span>
+                        <span className="text-yellow-500">o</span>
+                        <span className="text-blue-500">g</span>
+                        <span className="text-green-500">l</span>
+                        <span className="text-red-500">e</span>
+                    </h1>
                 </h1>
-                <span className={`${!imageSearch && "hidden"} text-2xl text-blue-400 text-right pb-10`}>Images</span>
-            </h1>
+                <span className={`${!imageSearch && "hidden"} font-bold text-2xl text-blue-400 text-right`}>Images</span>
+            </div>
             <p className={`${imageSearch && "hidden"} text-[10px] md:text-sm pt-2 text-gray-300`}>Google Search, but with no AI junk :)</p>
 
             <div className="relative md:h-12 w-10/12 md:w-2/3 lg:w-1/2">
