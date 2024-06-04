@@ -13,7 +13,6 @@ const TopBar = ({ setImageSearch, imageSearch, setOpenNewWindow, openNewWindow }
             <a className={`${imageSearch && "hidden"} p-4 bg-transparent text-white text-xs md:text-sm hover:underline`} href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a>
             <button className="p-4 bg-transparent text-white text-xs md:text-sm hover:underline" onClick={() => setImageSearch(!imageSearch)}>Images</button>
             <a href="https://github.com/ErdajtSopjani"><img src={ProfilePicture} alt="Profile Picture" className="w-8 h-8 rounded-full mt-2" /></a>
-            <button></button>
         </div>
     );
 };
