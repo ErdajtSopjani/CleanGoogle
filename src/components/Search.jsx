@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-const Search = ({ imageSearch }) => {
+const Search = ({ imageSearch, openNewWindow }) => {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = () => {
         let openUrl = imageSearch ? `https://www.google.com/search?q=${searchQuery}&sclient=img&udm=2` : `https://www.google.com/search?q=${searchQuery}&udm=14`
         console.log(searchQuery);
-        window.open(openUrl);
+        if (openNewWindow) window.open(openUrl);
+        else window.location.href = openUrl;
     };
 
     return (
@@ -19,12 +20,12 @@ const Search = ({ imageSearch }) => {
             <h1 className="items-center flex flex-row md:flex-row text-5xl md:text-7xl font-bold text-violet-400 pb-10">
                 Clean
                 <h1>
-                    <span class="text-blue-500">G</span>
-                    <span class="text-red-500">o</span>
-                    <span class="text-yellow-500">o</span>
-                    <span class="text-blue-500">g</span>
-                    <span class="text-green-500">l</span>
-                    <span class="text-red-500">e</span>
+                    <span className="text-blue-500">G</span>
+                    <span className="text-red-500">o</span>
+                    <span className="text-yellow-500">o</span>
+                    <span className="text-blue-500">g</span>
+                    <span className="text-green-500">l</span>
+                    <span className="text-red-500">e</span>
                 </h1>
                 <span className={`${!imageSearch && "hidden"} text-2xl text-blue-400 text-right pb-10`}>Images</span>
             </h1>
